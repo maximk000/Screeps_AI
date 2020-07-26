@@ -5,7 +5,7 @@ var spawnControl = require('spawn.control');
 var roomControl = require('room.control');
 
 module.exports.loop = function () {
-    //console.log(Room('E29N16'))
+    console.log(Room('E29N16'))
     var tower = Game.getObjectById('TOWER_ID');
     if(tower) {
         var closestDamagedStructure = tower.pos.findClosestByRange(FIND_STRUCTURES, {
